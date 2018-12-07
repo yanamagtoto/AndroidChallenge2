@@ -4,12 +4,13 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class Database extends SQLiteOpenHelper {
+public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static final String database_name = "conversiondb.db";
+    public static final String table_name = "category";
     
 
-    public Database(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+    public DatabaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
 
