@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AndroidChallenge2</string>
+
+    <string-array name="category">
+        <item>Temperature</item>
+        <item>Distance</item>
+        <item>Weight</item>
+    </string-array>
 </resources>

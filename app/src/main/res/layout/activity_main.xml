@@ -122,20 +122,6 @@
         app:layout_constraintVertical_bias="0.004" />
 
     <Button
-        android:id="@+id/btn_addCategory"
-        android:layout_width="104dp"
-        android:layout_height="29dp"
-        android:background="@android:color/holo_blue_light"
-        android:text="Add a Category"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.065"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.006" />
-
-    <Button
         android:id="@+id/btn_convert"
         android:layout_width="wrap_content"
         android:layout_height="38dp"
@@ -159,5 +145,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.068" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="3dp"
+        android:entries="@array/category"
+        app:layout_constraintBottom_toTopOf="@+id/editText_input1"
+        app:layout_constraintEnd_toStartOf="@+id/btn_addUnit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
